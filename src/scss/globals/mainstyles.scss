@@ -1,0 +1,271 @@
+html {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  scroll-behavior: smooth !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.body {
+  position: relative;
+  overflow-x: hidden;
+  color: #1d2433;
+  background-color: #f1f1f1;
+
+  &--fixed {
+    overflow-y: hidden;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+.hidden {
+  font-size: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  min-height: 96vh;
+  width: 281px;
+  border-radius: 10px;
+  border: 1px solid #eaebf0;
+  background: #fff;
+
+  @include mini-desktop {
+    max-width: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.sidebar.mobile--menu {
+  max-width: 281px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.burger {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(191, 219, 145, 0.5019607843),
+    #bfdb91
+  );
+
+  @include mini-desktop {
+    display: flex;
+  }
+
+  @include mobile {
+    top: 10px;
+    left: 10px;
+  }
+  @include small-mobile {
+    width: 45px;
+    height: 45px;
+    top: 25px;
+    left: 15px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); // можно регулировать прозрачность
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.main {
+  position: relative;
+  margin-left: 292px;
+  max-width: 1111px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #eaebf0;
+  background: #fff;
+  margin-bottom: 1px;
+
+  @include mini-desktop {
+    margin-left: 0;
+    max-width: unset;
+  }
+}
+
+.main__container {
+  padding: 19px 19px;
+  display: flex;
+}
+
+.line {
+  margin-top: 14px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__myIdeas.dropdown--open {
+  max-height: 500px;
+}
+
+.header__user-list.dropdown--open {
+  max-height: 500px;
+  margin-top: 10px;
+}
+
+[data-list='dropDownIdeas-btn'] {
+  cursor: pointer;
+}
+
+#idea-image {
+  display: none;
+}
+
+.file-placeholder {
+  color: #6d7280;
+  font-size: 16px;
+  letter-spacing: -0.32px;
+}
+
+.inputList__item-input.input-long {
+  min-height: 152px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1d1d1;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.tag-input-field {
+  background-color: #f9fafb;
+}
+
+.inputList__item-input.inputList__item-tags {
+  flex-direction: row;
+  justify-content: start;
+}
+
+.date {
+  margin-right: 50px;
+
+  @include small-tablet{
+    margin-right: 10px;
+  }
+}
+
+.rating {
+  margin-right: 70px;
+
+  @include small-tablet {
+    margin-right: 15px;
+  }
+}
+
+.svg-post-img {
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+
+  @include small-tablet {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.mobile-metrics {
+  display: flex;
+  margin-left: auto;
+  gap: 103px;
+
+  @include mini-desktop {
+    gap: 20px;
+  }
+
+  @include tablet {
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+
+  @include mobile {
+    margin-left: 0;
+  }
+}
