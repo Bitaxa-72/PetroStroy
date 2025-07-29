@@ -1,0 +1,33 @@
+.lk {
+  &__mainpagecontent {
+    margin-top: 339px;
+    display: flex;
+  }
+  &__mainpagecontent-text {
+    margin-top: 89px;
+  }
+  &__mainpagecontent-title {
+    max-width: 511px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  &__mainpagecontent-descr {
+    color: rgb(146, 146, 146);
+    max-width: 750px;
+    line-height: 56px;
+  }
+  &__aiForm {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+    padding: 25px 39px 24px 31px;
+    margin-top: 262px;
+    margin-left: 42px;
+    margin-right: 43px;
+    border-bottom: 2px solid rgb(229, 231, 235);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+  }
+}

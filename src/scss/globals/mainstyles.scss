@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-family: Inter, sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   scroll-behavior: smooth !important;
 }
 
@@ -15,8 +15,8 @@ html {
 .body {
   position: relative;
   overflow-x: hidden;
-  color: #1d2433;
-  background-color: #f1f1f1;
+  color: #000000;
+  background-color: #f2f8ff;
 
   &--fixed {
     overflow-y: hidden;
@@ -63,11 +63,14 @@ button {
   cursor: pointer;
 }
 
-.container {
+.container__lk {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1440px;
+  max-width: 1848px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hidden {
@@ -76,196 +79,275 @@ button {
   visibility: hidden;
 }
 
-.sidebar {
-  position: fixed;
-  min-height: 96vh;
-  width: 281px;
-  border-radius: 10px;
-  border: 1px solid #eaebf0;
-  background: #fff;
-
-  @include mini-desktop {
-    max-width: 0;
-    opacity: 0;
-    visibility: hidden;
-  }
+.lk__window {
+  background-color: #ffffff;
 }
-
-.sidebar.mobile--menu {
-  max-width: 281px;
-  opacity: 1;
-  visibility: visible;
-  z-index: 2;
+.lk__nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 231px;
+  margin-bottom: 103px;
 }
-
-.burger {
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+.lk__title {
   display: none;
-  width: 56px;
-  height: 56px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: linear-gradient(
-    to bottom,
-    rgba(191, 219, 145, 0.5019607843),
-    #bfdb91
-  );
+  color: #000000b3;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 54px;
+  text-align: right;
+}
+.lk__title.lk__title--active{
+  display: inline-block;
+}
 
-  @include mini-desktop {
+.buttonBack {
+  margin-left: 176px;
+}
+
+.lk {
+  padding-left: 20px;
+  width: 100%;
+  padding-top: 214px;
+  padding-bottom: 369px;
+}
+.lk__wrapper {
+  width: 100%;
+  display: flex;
+  gap: 38px;
+}
+.lk__main {
+  max-width: 1335px;
+  width: 100%;
+  height: 1220px;
+  display: flex;
+  flex-direction: column;
+}
+.lk__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  width: 418px;
+  height: 1220px;
+}
+.lk__stats {
+  padding: 38px 20px 55px 22px;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+
+  &-list {
     display: flex;
+    justify-content: space-between;
   }
 
-  @include mobile {
-    top: 10px;
-    left: 10px;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    align-items: center;
   }
-  @include small-mobile {
-    width: 45px;
-    height: 45px;
-    top: 25px;
-    left: 15px;
+
+  &-num {
+    margin-top: 7px;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &-text {
+    color: rgb(146, 146, 146);
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
   }
 }
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.lk__nav {
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); // можно регулировать прозрачность
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1;
-  transition: opacity 0.3s ease;
-
-  &.active {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
-.main {
-  position: relative;
-  margin-left: 292px;
-  max-width: 1111px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid #eaebf0;
-  background: #fff;
-  margin-bottom: 1px;
-
-  @include mini-desktop {
-    margin-left: 0;
-    max-width: unset;
-  }
+.boldtext {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 56px;
 }
 
-.main__container {
-  padding: 19px 19px;
+.adminpro {
+  color: rgb(146, 146, 146);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.discussions {
+  background: linear-gradient(
+    -39.06deg,
+    rgb(241, 233, 253) 16.446%,
+    rgba(241, 233, 253, 0.71) 32.063%,
+    rgba(241, 233, 253, 0.64) 44.842%,
+    rgba(241, 233, 253, 0.56) 63.746%,
+    rgba(241, 233, 253, 0.3) 79.015%
+  );
+  color: rgb(135, 65, 225);
+}
+
+.chat {
+  background: linear-gradient(
+    -39.06deg,
+    rgb(252, 237, 216) 16.446%,
+    rgba(252, 237, 216, 0.71) 32.204%,
+    rgba(252, 237, 216, 0.64) 45.463%,
+    rgba(252, 237, 216, 0.56) 64.231%,
+    rgba(252, 237, 216, 0.3) 79.205%
+  );
+  color: rgb(218, 97, 43);
+}
+
+.sign {
+  background: linear-gradient(
+    -39.06deg,
+    rgb(226, 251, 232) 16.446%,
+    rgba(226, 251, 232, 0.71) 32.063%,
+    rgba(226, 251, 232, 0.64) 49.013%,
+    rgba(226, 251, 232, 0.56) 64.231%,
+    rgba(226, 251, 232, 0.3) 79.205%
+  );
+  color: rgb(76, 160, 84);
+}
+
+.appeals {
+  background: linear-gradient(
+    -39.06deg,
+    rgb(222, 234, 252) 16.446%,
+    rgba(222, 234, 252, 0.71) 32.063%,
+    rgba(222, 234, 252, 0.58) 49.013%,
+    rgba(222, 234, 252, 0.56) 64.231%,
+    rgba(222, 234, 252, 0.3) 79.205%
+  );
+  color: rgb(60, 109, 229);
+}
+
+.lk__nav {
+  padding: 78px 32px;
   display: flex;
-}
+  flex-direction: column;
+  gap: 18px;
 
-.line {
-  margin-top: 14px;
+  &-item {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(249, 250, 251);
+    transition: all 0.3s;
 
-  @include tablet {
-    display: none;
+    &:hover {
+      background: #e9f1fd;
+      transition: all 0.3s;
+
+      & a {
+        color: #3c6de5;
+      }
+    }
+
+    & a {
+      color: #000000;
+      padding: 17px 0 17px 20px;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+
+      & img {
+        margin-right: 14px;
+      }
+    }
   }
 }
 
-.header__myIdeas.dropdown--open {
-  max-height: 500px;
-}
-
-.header__user-list.dropdown--open {
-  max-height: 500px;
-  margin-top: 10px;
-}
-
-[data-list='dropDownIdeas-btn'] {
-  cursor: pointer;
-}
-
-#idea-image {
-  display: none;
-}
-
-.file-placeholder {
-  color: #6d7280;
-  font-size: 16px;
-  letter-spacing: -0.32px;
-}
-
-.inputList__item-input.input-long {
-  min-height: 152px;
-}
-
-.tag {
+.sidebarGlobalButton {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #d1d1d1;
-  padding: 3px 5px;
-  border-radius: 5px;
+  align-self: center;
+  padding: 19px 26px;
+  border-radius: 10px;
+  background: #e9f1fd;
+  color: #3c6de5;
+  font-size: 20px;
+  margin-top: auto;
 }
 
-.tag-input-field {
-  background-color: #f9fafb;
+.imgtranform1 {
+  transform: translateY(3px);
 }
 
-.inputList__item-input.inputList__item-tags {
-  flex-direction: row;
-  justify-content: start;
-}
-
-.date {
-  margin-right: 50px;
-
-  @include small-tablet{
-    margin-right: 10px;
-  }
-}
-
-.rating {
-  margin-right: 70px;
-
-  @include small-tablet {
-    margin-right: 15px;
-  }
-}
-
-.svg-post-img {
-  width: 99px;
-  height: 99px;
-  flex-shrink: 0;
-
-  @include small-tablet {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-.mobile-metrics {
+.aiAssistent {
   display: flex;
-  margin-left: auto;
-  gap: 103px;
+  gap: 41px;
+  margin-top: auto;
 
-  @include mini-desktop {
-    gap: 20px;
+  &__form {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 9px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 31px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(229, 231, 235);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
   }
+}
+.lk__userInfoInputs-input-required-div {
+  position: relative;
+  &::before {
+    content: '*';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 110px;
+    z-index: 1;
+    color: #ff0000;
+    display: inline-block;
+  }
+}
+.lk__userInfoInputs-input-required-div-1 {
+  position: relative;
+  &::before {
+    content: '*';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 180px;
+    z-index: 1;
+    color: #ff0000;
+    display: inline-block;
+  }
+}
 
-  @include tablet {
-    gap: 0;
-    flex-direction: column-reverse;
+.lk__nav-item.lk__nav-item--active {
+  background: #e9f1fd;
+  & a{
+    color: #3c6de5;
   }
-
-  @include mobile {
-    margin-left: 0;
-  }
+}
+.lk__userInfoInputs.lk__activeDisplay{
+  display: flex;
+}
+.lk__userInfoInputs-pass.lk__activeDisplay{
+  display: flex;
+}
+.lk__datauser.lk__datauser--active{
+  display: flex;
 }

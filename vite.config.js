@@ -3,9 +3,9 @@ import injectHTML from 'vite-plugin-html-inject';
 
 export default defineConfig({
     root: './src',
-    base: '/IdeaStart/',
+    base: '/PetroStroy/',
     server: {
-        port: 3000,
+        port: 3001,
     },
     build: {
         outDir: '../dist',
@@ -13,8 +13,6 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: './src/index.html',
-                post: './src/postIdea.html',
-                new: './src/newIdea.html',
             },
         },
     },

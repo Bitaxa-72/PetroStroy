@@ -1,0 +1,88 @@
+.account__page {
+  width: 237px;
+  position: relative;
+}
+
+.lk__main-account {
+  padding: 155px 121px 176px;
+}
+
+.lk {
+  &__datauser {
+    display: none;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 96px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+
+      &-1 {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      &-2 {
+        color: #929292;
+      }
+    }
+
+    &-avatar {
+      width: 72px;
+      height: 72px;
+      background-color: #f2f8ff;
+      border-radius: 100%;
+    }
+  }
+
+  &__userInfoInputs {
+    display: none;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 32px;
+
+    &-input {
+      padding: 23px 0 22px 35px;
+      box-sizing: border-box;
+      border-bottom: 2px solid #e0e0e0;
+      border-radius: 10px;
+      background: #ffffff;
+
+      &-required {
+        border-bottom: 2px solid #ff0000;
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+  &__userInfoInputs-pass {
+    display: none;
+    flex-direction: column;
+    margin-bottom: 32px;
+    color: #929292;
+    font-size: 18px;
+
+    & span{
+        margin-left: 4px;
+        margin-top: 3px;
+        margin-bottom: 21px;
+    }
+
+    &-input {
+      padding: 23px 0 22px 35px;
+      box-sizing: border-box;
+      border-bottom: 2px solid #e0e0e0;
+      border-radius: 10px;
+      background: #ffffff;
+
+      &-required {
+        border-bottom: 2px solid #ff0000;
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+}

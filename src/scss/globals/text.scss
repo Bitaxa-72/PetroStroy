@@ -1,35 +1,15 @@
 .text {
   &-p {
-    &-subtitle {
-      gap: 27px;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 131%;
-      letter-spacing: -0.03em;
-      color: var(--neutral-color-100);
-    }
     &-large {
-      font-size: 18px;
+      font-size: 40px;
     }
 
     &-medium {
-      font-size: 16px;
+      font-size: 25px;
     }
 
     &-default {
-      font-size: 15px;
-    }
-
-    &-small {
-      font-size: 14px;
-    }
-
-    &-xsmall {
-      font-size: 13px;
-    }
-
-    &-xSsmall {
-      font-size: 10px;
+      font-size: 20px;
     }
   }
 }
