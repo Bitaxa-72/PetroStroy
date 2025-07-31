@@ -7,8 +7,11 @@ export const switchForm = () => {
     const passTitle = document.querySelector('[data-form="passTitle"]');
     const infoAcc = document.querySelector('[data-form="infoAcc"]');
     const passAcc = document.querySelector('[data-form="passAcc"]');
-    
-    
+
+    if (!infoForm || !passForm || !infoSwitch || !passSwitch || !infoTitle || !passTitle || !infoAcc || !passAcc) {
+        return;
+    }
+
     const intoPass = () => {
         passSwitch.addEventListener('click', (e) => {
             const target = e.target.closest('a');
@@ -43,4 +46,29 @@ export const switchForm = () => {
 
     intoInfo();
 
-}
+};
+
+export const inputImage = () => {
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.image-upload').forEach(input => {
+            input.addEventListener('change', function () {
+                const file = this.files[0];
+                if (!file) return;
+                if (!file.type.startsWith('image/')) {
+                    alert('Можно загружать только картинки');
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = e => {
+                    const img = this.closest('.lk__imageUploadInput').querySelector('img');
+                    if (img) {
+                        img.src = e.target.result;
+                        img.style.width = '40px';
+                        img.style.height = '40px';
+                    }
+                };
+                reader.readAsDataURL(file);
+            });
+        });
+    });
+}   
