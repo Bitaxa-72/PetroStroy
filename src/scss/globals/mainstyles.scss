@@ -119,7 +119,7 @@ button {
 }
 
 .lk {
-  padding-left: 20px;
+  padding-left: 10px;
   width: 100%;
   padding-top: 214px;
   padding-bottom: 369px;
@@ -188,6 +188,7 @@ button {
 
 .lk__nav.lk__height {
   height: unset;
+  min-height: 979px;
 }
 
 .boldtext {
@@ -296,7 +297,7 @@ button {
   display: flex;
   justify-content: center;
   align-self: center;
-  padding: 19px 26px;
+  padding: 19px 23px;
   border-radius: 10px;
   background: #e9f1fd;
   color: #3c6de5;
@@ -498,6 +499,27 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+  }
+}
+.lk__userInfoInputs-input-required-div-17 {
+  font-size: 20px;
+  color: #929292;
+  position: relative;
+
+  & span {
+    margin-left: 35px;
+    margin-bottom: 13px;
+
+    &::before {
+      content: '*';
+      position: absolute;
+      top: 50%;
+      left: 55px;
+      transform: translateY(-50%);
+      z-index: 1;
+      color: #ff0000;
+      display: inline-block;
+    }
   }
 }
 
@@ -898,4 +920,450 @@ span {
   align-items: center;
 }
 .checkbox--gray {
+}
+
+.lk__title.lk__connPage {
+  width: 360px;
+}
+
+.lk__nav-wrapper.lk__connPage-wrap {
+  margin-right: 60px;
+}
+
+.connection__form {
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.connection__form-markList {
+  display: flex;
+  gap: 62px;
+  margin-bottom: 72px;
+}
+.connection__form-mark {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.checkbox-circle {
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #929292;
+  border-radius: 15px;
+
+  &:checked {
+    background-color: #929292;
+  }
+}
+
+.media__descr.media__ini-descr {
+  max-width: unset;
+}
+
+.media__status.media__status-ini {
+  width: 133px;
+}
+
+.media__status-ini.waiting {
+  color: #7e4f1f;
+  background: #fdf8c9;
+}
+
+.media__post.media__post-ini {
+  gap: unset;
+  justify-content: space-between;
+}
+
+.addinitiatives__form {
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.lk__user-inputWithShort {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & span {
+    margin-left: 35px;
+  }
+}
+
+.addinitiatives__textEditor-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+
+  & span {
+    margin-left: 53px;
+  }
+}
+.addinitiatives__textEditor {
+  width: 1141px;
+  height: 489px;
+  border: 1px solid black;
+}
+
+.appeal__list {
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.appeal__item {
+  height: 356px;
+  border-radius: 10px;
+  background: rgb(249, 250, 251);
+  display: flex;
+  padding: 62px 63px;
+  flex-direction: column;
+}
+.appeal__title {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  margin-bottom: 17px;
+}
+
+.appeal__date {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-left: 32px;
+  margin-bottom: 17px;
+
+  & svg {
+    transform: translateY(-2px);
+  }
+}
+.appeal__status {
+  align-items: center;
+  display: flex;
+  gap: 17px;
+  margin-bottom: 14px;
+  margin-left: 32px;
+}
+.appeal__status-display {
+  color: #7e4f1f;
+  font-size: 12px;
+  width: 133px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgb(253, 248, 201);
+}
+
+.appeal__file {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-left: 32px;
+  margin-bottom: 14px;
+
+  & svg {
+    transform: translateY(-2px);
+  }
+}
+
+.appeal__buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.appeal__edit {
+  color: #3c6de5;
+  font-size: 20px;
+}
+
+.appeal__delete {
+  color: #ff0000;
+  font-size: 20px;
+}
+
+.appeal__way {
+  margin-left: 32px;
+  margin-bottom: 20px;
+}
+
+.newsletter__form {
+  margin-top: 126px;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter__list {
+  flex-direction: column;
+  gap: 42px;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+}
+.newsletter__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter__title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+}
+.newsletter__button {
+}
+.newsletter__checkbox {
+  transform: translateX(5px);
+  appearance: none;
+  width: 61px;
+  height: 35.71px;
+  border-radius: 20px;
+  background: #e5e7eb;
+  position: relative;
+  transition: all 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 3px;
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    border-radius: 100%;
+    transition: all 0.3s;
+  }
+
+  &:checked {
+    background: #3366e3;
+    &::before {
+      left: 27px;
+    }
+  }
+}
+.newsletter__buttons-wrap {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.media__descr.b2b__descr {
+  max-width: 384px;
+}
+
+.b2b__pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 45px;
+}
+.b2b__pricing-price {
+}
+.b2b__pricing-oldPrice {
+  text-decoration: line-through;
+}
+
+.page__buttons {
+  display: flex;
+  gap: 5px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+.page__buttons-item {
+  width: 25px;
+  height: 30px;
+  background-color: #3366e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.page__buttons-link {
+  color: #fff;
+}
+
+.import__form {
+  margin-top: 133px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.lk__imageUploadInput.import__products-input {
+  height: 258px;
+  max-width: 762px;
+  width: 100%;
+}
+
+.import__AddProduct {
+  margin-top: 132px;
+}
+
+.AddProduct__span {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 38px;
+}
+
+.AddProduct__category {
+  padding-left: 20px;
+  margin-top: 36px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & span {
+    margin-left: 8px;
+  }
+}
+.AddProduct__category-button {
+  height: 30px;
+  width: 500px;
+  font-size: 15px;
+  background-color: #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & span {
+    color: #000000;
+  }
+}
+.import__AddProduct .addinitiatives__textEditor-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.addproduct__imputs {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+.addproduct__descr {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 35px;
+}
+
+.chat__messageList {
+  margin-top: 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+.chat__messageItem {
+  border-radius: 10px;
+  background: #f9fafb;
+  min-height: 290px;
+  padding: 37px 35px;
+}
+.chat__messagewTop {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+.chat__messgaePhoto {
+  height: 84px;
+  width: 84px;
+  border-radius: 100%;
+  background-color: #3366e3;
+}
+.chat__messgaeName {
+  color: #000000;
+  font-size: 20px;
+}
+.chat__messgaeTime {
+  font-size: 20px;
+}
+.chat__messageText {
+  color: #000000;
+  padding: 32px 40px;
+  background-color: #fff;
+}
+.chat__wrapper {
+  border-radius: 10px;
+  background: rgb(249, 250, 251);
+  margin-top: 134px;
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.chat__wrapperTop {
+  border-bottom: 1px solid rgb(201, 201, 201);
+  padding: 17px 0 14px 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.chat__wrapperInChat {
+  font-size: 14px;
+}
+.chat__wrapperTopName {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+.chat__wrapperList {
+  border-bottom: 1px solid rgb(201, 201, 201);
+  min-height: 368px;
+  height: auto;
+  padding: 25px 45px 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+.chat__wrapperListItem {
+  display: flex;
+}
+.chat__wrapperListItem-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  margin-right: 10px;
+  background-color: #3366e3;
+}
+.chat__wrapperListItem-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.chat__wrapperListItem-info--name {
+  font-size: 14px;
+}
+.chat__wrapperListItem-info--text {
+}
+.chat__wrapperListItem-time {
+  color: rgb(146, 146, 146);
+  font-family: Inter;
+  font-size: 14px;
+  margin-left: auto;
+  align-self: center;
+}
+.chat__wrapperBot {
+  margin-top: auto;
+  padding: 14px 24px 14px 23px;
+  display: flex;
+  gap: 11px;
+  height: 144px;
+}
+.chat__wrapperBotInput {
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 78px;
+  border: 1px solid rgb(201, 201, 201);
+}
+.chat__wrapperBotbutton {
+  margin-top: auto;
+  width: 125px;
+  height: 46px;
+  border-radius: 10px;
+  background: #3c6de5;
+  color: #ffffff;
+  font-size: 18px;
 }

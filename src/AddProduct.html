@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<load src="./html/base/head.html" title="" />
+
+<body class="body">
+    <div class="container__lk">
+        <section class="lk">
+            <div class="lk__nav-wrapper lk__signPage-wrapper">
+                <a class="buttonBack" href="/">
+                    <img width="51" height="51" src="./assets/icons/ArrowLeft.svg" alt="кнопка для навигации">
+                </a>
+                <h1 class="lk__title lk__title--active lk__signPage">В2В</h1>
+            </div>
+            <div class="lk__wrapper">
+                <div class="lk__main border lk__about lk__window">
+                    <h2 class="lk__about-title">Добавить товар</h2>
+                    <form class="import__AddProduct" action="">
+                        <input class="lk__userInfoInputs-input" type="text" placeholder="Наименование">
+                        <div class="lk__string">
+                            <div class="lk__string-2-descr">
+                                <label for="">Изображение</label>
+                                <label class="lk__imageUploadInput">
+                                    <img src="./assets/icons/arrow.svg" width="21" height="19"
+                                        alt="кнопка загрузки фото">
+                                    Загрузить файл
+                                    <input type="file" id="imageUploadInput1" class="image-upload" accept="image/*"
+                                        hidden>
+                                </label>
+                                <span>Тип файла: png, gif, jpg, jpeg</span>
+                            </div>
+                            <div class="lk__string-2-descr">
+                            </div>
+                        </div>
+                        <span class="AddProduct__span">Прикрепите изображение товара</span>
+                        <ul class="AddProduct__category">
+                            <span>Категории</span>
+                            <li>
+                                <button class="AddProduct__category-button">
+                                    <span>Дополнительные товары</span> <img src="./assets/icons/plus.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="AddProduct__category-button">
+                                    <span>Инженерное обустройство</span> <img src="./assets/icons/plus.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="AddProduct__category-button">
+                                    <span>Материалы для внутренней отделки</span> <img src="./assets/icons/plus.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="AddProduct__category-button">
+                                    <span>Материалы для дорожного строительства</span> <img src="./assets/icons/plus.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="AddProduct__category-button">
+                                    <span>Общестроительные материалы</span> <img src="./assets/icons/plus.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="AddProduct__category-button">
+                                    <span>Строительная техника и оборудование</span> <img src="./assets/icons/plus.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="AddProduct__category-button">
+                                    <span>Строительная техника и инструмент</span> <img src="./assets/icons/plus.svg" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                        <textarea class="lk__userInfoInputs-input" type="text" placeholder="Краткое описание"></textarea>
+                        <div class="addinitiatives__textEditor-wrapper">
+                            <span>Описание</span>
+                            <div class="addinitiatives__textEditor">
+                                Через Wordpress
+                            </div>
+                        </div>
+                        <div class="addproduct__imputs">
+                            <input class="lk__userInfoInputs-input" type="text" placeholder="Стоимость без скидки">
+                            <div class="addproduct__descr-wrap">
+                                <input class="lk__userInfoInputs-input" type="text" placeholder="Стоимость для Портала">
+                                <span class="addproduct__descr">Заполните это поле, если вы готовы предоставить скидку компаниям, зарегистрированным на портале.</span>
+                            </div>
+                            <div class="addproduct__descr-wrap">
+                                <input class="lk__userInfoInputs-input" type="text" placeholder="Ссылка на товар">
+                                <span class="addproduct__descr">Вставьте ссылку на подробное описание товара на вашем сайте</span>
+                            </div>
+                            <input class="lk__userInfoInputs-input" type="text" placeholder="Телефон">
+                            <input class="lk__userInfoInputs-input" type="text" placeholder="E-mail">
+                            <input class="lk__userInfoInputs-input" type="text" placeholder="Контактное лицо">
+                        </div>
+                    </form>
+                </div>
+                <div class="lk__sidebar">
+                    <div class="lk__stats border lk__window">
+                        <span class="adminpro">adminpro</span>
+                        <div class="lk__stats-list">
+                            <div class="lk__stats-item">
+                                <div class="lk__stats-num appeals">12</div>
+                                <span class="lk__stats-text">Обращения</span>
+                            </div>
+                            <div class="lk__stats-item">
+                                <div class="lk__stats-num sign">12</div>
+                                <span class="lk__stats-text">Знак доверия</span>
+                            </div>
+                            <div class="lk__stats-item">
+                                <div class="lk__stats-num chat">1</div>
+                                <span class="lk__stats-text">Чат</span>
+                            </div>
+                            <div class="lk__stats-item">
+                                <div class="lk__stats-num discussions">12</div>
+                                <span class="lk__stats-text">Обсуждения</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="lk__nav lk__height border lk__window">
+                        <li class="lk__nav-item text-p-default">
+                            <a href="b2b.html" class="lk__nav-link">
+                                <img src="./assets/icons/payment.svg" width="20" alt="настройки аккаунта">
+                                Ваши предложения
+                            </a>
+                        </li>
+                        <li class="lk__nav-item text-p-default lk__nav-item--active">
+                            <a href="AddProduct.html" class="lk__nav-link lk__nav-item--active">
+                                <img src="./assets/icons/plus.svg" width="20" alt="настройки аккаунта">
+                                Добавить товар
+                            </a>
+                        </li>
+                        <li class="lk__nav-item text-p-default">
+                            <a href="AddService.html" class="lk__nav-link">
+                                <img src="./assets/icons/plus.svg" width="20" alt="настройки аккаунта">
+                                Добавить услугу
+                            </a>
+                        </li>
+                        <li class="lk__nav-item text-p-default">
+                            <a href="importProducts.html" class="lk__nav-link">
+                                <img src="./assets/icons/payment.svg" width="20" alt="настройки аккаунта">
+                                Импорт товаров
+                            </a>
+                        </li>
+                        <div class="newsletter__buttons-wrap">
+                            <button class="sidebarGlobalButton about__page">
+                                Сохранить как черновик
+                            </button>
+                            <button class="sidebarGlobalButton about__page">
+                                Публиковать
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
