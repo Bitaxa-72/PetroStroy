@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    
+
     padding: 25px 39px 24px 31px;
     margin-top: 262px;
     margin-left: 42px;
@@ -29,5 +29,11 @@
     border-bottom: 2px solid rgb(229, 231, 235);
     border-radius: 10px;
     background: rgb(255, 255, 255);
+  }
+}
+
+.lk__robot-img {
+  @include normal-desktop {
+    width: 300px;
   }
 }
