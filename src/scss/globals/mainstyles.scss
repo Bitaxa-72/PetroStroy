@@ -251,7 +251,6 @@ button {
 
 .lk__nav.lk__height {
   height: unset;
-  // min-height: 979px;
 
   @include mini-desktop {
     height: 80vh;
