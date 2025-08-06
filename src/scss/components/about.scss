@@ -2,6 +2,10 @@
   &__about {
     padding: 155px 128px 379px 121px;
 
+    @include small-tablet{
+      padding: 60px 40px;
+    }
+
     &__form {
       display: flex;
       flex-direction: column;
@@ -76,10 +80,30 @@
     display: flex;
     gap: 15px;
 
+    @include mini-desktop  {
+      flex-direction: column;
+    }
+
+    & span{
+      @include tablet{
+        font-size: 16px;
+      }
+    }
+
+    & label{
+      @include tablet{
+        font-size: 16px;
+      }
+    }
+
     &-2 {
       margin-top: 12px;
       display: flex;
       gap: 15px;
+
+      @include mini-desktop  {
+      flex-direction: column;
+    }
 
       &-descr {
         width: 100%;
@@ -102,6 +126,10 @@
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 
@@ -116,6 +144,10 @@
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 
@@ -131,6 +163,10 @@
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-5 {
@@ -145,6 +181,10 @@
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 
@@ -165,6 +205,10 @@
   color: #039203;
   gap: 22px;
   cursor: pointer;
+
+  @include small-tablet{
+    padding: 0 50px;
+  }
 }
 
 .lk__string-span {

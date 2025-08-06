@@ -172,7 +172,7 @@ button {
 }
 .lk__sidebar {
   position: sticky;
-  top: -480px;
+  top: -388px;
   display: flex;
   flex-direction: column;
   gap: 38px;
@@ -471,8 +471,8 @@ button {
     color: #ff0000;
     display: inline-block;
 
-    @include small-tablet {
-      left: 95px;
+    @include small-tablet{
+      display: none;
     }
   }
 }
@@ -487,6 +487,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-6 {
@@ -500,6 +504,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-7 {
@@ -513,6 +521,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-8 {
@@ -526,6 +538,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-9 {
@@ -539,6 +555,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-10 {
@@ -552,6 +572,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-11 {
@@ -566,6 +590,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-12 {
@@ -580,6 +608,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-13 {
@@ -604,6 +636,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-15 {
@@ -617,6 +653,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-16 {
@@ -630,6 +670,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-17 {
@@ -650,6 +694,10 @@ button {
       z-index: 1;
       color: #ff0000;
       display: inline-block;
+
+      @include small-tablet{
+      display: none;
+    }
     }
   }
 }
@@ -665,6 +713,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 
@@ -736,6 +788,10 @@ span {
   margin-left: 35px;
   margin-bottom: 20px;
   color: #da612b;
+
+  @include tablet{
+    font-size: 16px;
+  }
 }
 
 .textEditorDescr {
@@ -994,6 +1050,10 @@ span {
     font-size: 20px;
     top: -30px;
     left: 143px;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 }
 
@@ -1672,5 +1732,11 @@ span {
     top: 5px;
     left: 5px;
     margin-left: 0;
+  }
+}
+.submit--mobile{
+  display: none;
+  @include mini-desktop{
+    display: flex;
   }
 }
