@@ -5,6 +5,18 @@
 
 .lk__main-account {
   padding: 155px 121px 176px;
+
+  @include desktop{
+    padding: 155px 60px 176px;
+  }
+
+  @include small-tablet{
+    padding: 60px 60px;
+  }
+
+  @include mobile{
+    padding: 60px 25px;
+  }
 }
 
 .lk {
@@ -13,6 +25,10 @@
     align-items: center;
     gap: 55px;
     margin-bottom: 96px;
+
+    @include small-tablet{
+      margin-bottom: 40px;
+    }
 
     &-text {
       display: flex;
@@ -23,10 +39,17 @@
         font-size: 30px;
         font-weight: 600;
         margin-bottom: 12px;
+
+        @include small-tablet{
+          font-size: 22px;
+        }
       }
 
       &-2 {
         color: #929292;
+        @include small-tablet{
+          font-size: 18px;
+        }
       }
     }
 
@@ -35,6 +58,7 @@
       height: 72px;
       background-color: #f2f8ff;
       border-radius: 100%;
+      flex-shrink: 0;
     }
   }
 
@@ -44,6 +68,10 @@
     gap: 28px;
     margin-bottom: 32px;
 
+    @include small-tablet{
+        gap: 20px;
+      }
+
     &-input {
       padding: 23px 0 22px 35px;
       width: 100%;
@@ -51,6 +79,10 @@
       border-bottom: 2px solid #e0e0e0;
       border-radius: 10px;
       background: #ffffff;
+
+      @include small-tablet{
+        font-size: 18px;
+      }
 
       &-required {
         border-bottom: 2px solid #ff0000;

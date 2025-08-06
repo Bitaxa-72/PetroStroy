@@ -95,6 +95,10 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include mobile {
+    padding: 0;
+  }
 }
 
 .hidden {
@@ -111,6 +115,10 @@ button {
   justify-content: space-between;
   margin-right: 155px;
   margin-bottom: 103px;
+
+  @include small-tablet {
+    display: none;
+  }
 }
 .lk__title {
   display: none;
@@ -133,7 +141,15 @@ button {
   padding-left: 10px;
   width: 100%;
   padding-top: 214px;
-  padding-bottom: 369px;
+  padding-bottom: 20px;
+
+  @include mini-desktop {
+    padding: 20px 0;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
 }
 .lk__wrapper {
   width: 100%;
@@ -148,15 +164,20 @@ button {
   flex-direction: column;
   position: relative;
   padding: 10px;
+
+  @include mini-desktop {
+    height: auto;
+    min-height: 100vh;
+  }
 }
 .lk__sidebar {
   position: sticky;
-  top: 0;
+  top: -480px;
   display: flex;
   flex-direction: column;
   gap: 38px;
   width: 418px;
-  height: 100vh;
+  max-height: 1390px;
 
   @include mini-desktop {
     position: fixed;
@@ -166,6 +187,10 @@ button {
     opacity: 0;
     gap: 0;
     max-width: 343px;
+  }
+
+  @include small-mobile {
+    max-width: 285px;
   }
 }
 @include mini-desktop {
@@ -206,6 +231,9 @@ button {
 
     @include mini-desktop {
       gap: unset;
+    }
+    @include small-mobile {
+      flex-wrap: wrap;
     }
   }
 
@@ -261,6 +289,14 @@ button {
   font-size: 25px;
   font-weight: 500;
   line-height: 56px;
+
+  @include normal-desktop {
+    font-size: 22px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .adminpro {
@@ -401,6 +437,11 @@ button {
   gap: 41px;
   margin-top: auto;
 
+  @include small-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__form {
     display: flex;
     margin-top: auto;
@@ -412,6 +453,10 @@ button {
     border-bottom: 2px solid rgb(229, 231, 235);
     border-radius: 10px;
     background: rgb(255, 255, 255);
+
+    @include mobile {
+      padding: 25px;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div {
@@ -425,6 +470,10 @@ button {
     z-index: 1;
     color: #ff0000;
     display: inline-block;
+
+    @include small-tablet {
+      left: 95px;
+    }
   }
 }
 .lk__userInfoInputs-input-required-div-1 {
@@ -1612,4 +1661,16 @@ span {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.buttonBack.mobile {
+  display: none;
+
+  @include small-tablet {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    margin-left: 0;
+  }
 }
